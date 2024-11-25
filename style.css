@@ -1,0 +1,74 @@
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('images/v662-peipei-38-memphis.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Container for the game elements */
+.container {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* Heading styling */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Game board styling */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    user-select: none;
+    color: #000;
+}
+
+.cell.taken {
+    cursor: not-allowed;
+}
+
+/* Game status styling */
+#game-status {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Reset button styling */
+#reset-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#reset-btn:hover {
+    background-color: #218838;
+}
